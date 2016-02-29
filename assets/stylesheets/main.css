@@ -1,0 +1,212 @@
+html {
+  background: url("../images/bg.jpg");
+  background-size: cover;
+  box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+body {
+  font: 14px/18px sans-serif;
+}
+
+/* Header */
+
+header{
+  height: 60px;
+  width: 100%;
+  background: rgba(0,0,0,.5);
+  background-size: cover;
+  margin-bottom: 10px;
+  border-bottom: 1px solid rgba(0,0,0,.15);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-family: "Pacifico", Helvetica, Arial, sans-serif;
+  font-size: 35px;
+  color: white;
+  margin-left: 10px;
+}
+
+/* Buttons - Material Icons*/
+
+.button-container {
+  margin-left: 10px;
+  margin-right: 20px;
+}
+
+i.material-icons {
+    font-size: 1.5rem;
+    color: white;
+    position: relative;
+    border-radius: 50%;
+    padding: 5px;
+    margin: 3px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: color 0.2s ease, background-color 0.2s ease, transform 0.3s ease;
+}
+
+i.material-icons:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    border: solid 2px;
+    transform: scale(0.8);
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+i.material-icons:hover:after {
+    transform: scale(1);
+    box-shadow: 10px 0 20px rgba(0, 0, 0, 0.19), 6px 0 6px rgba(0, 0, 0, 0.23);
+}
+
+i.material-icons:hover {
+    background-color: transparent;
+    transform: rotate(90deg);
+    cursor: pointer;
+    box-shadow: none;
+}
+
+i.material-icons:nth-of-type(1) {
+    background-color: #cd8484;
+}
+
+i.material-icons:nth-of-type(1):hover {
+    color: #cd8484;
+    background-color: white;
+}
+
+i.material-icons:nth-of-type(1):after {
+    border-color: #cd8484;
+}
+
+i.material-icons:nth-of-type(2) {
+    background-color: #88b999;
+}
+
+i.material-icons:nth-of-type(2):hover {
+    color: #88b999;
+    background-color: white;
+}
+
+i.material-icons:nth-of-type(2):after {
+    border-color: #88b999;
+}
+
+i.material-icons:nth-of-type(3) {
+    background-color: #af88b9;
+}
+
+i.material-icons:nth-of-type(3):hover {
+    color: #af88b9;
+    background-color: white;
+}
+
+i.material-icons:nth-of-type(3):after {
+    border-color: #af88b9;
+}
+
+.ui-tooltip {
+  font-size: 13px;
+}
+
+form {
+  color: white;
+  font-size: 13px;
+  font-weight: 300;
+}
+
+input[type=radio],
+input[type=checkbox] {
+  margin-right: 5px;
+  margin-left: 10px;
+}
+
+/* Grid */
+
+.container {
+  width: 512px; /* 16px = 32 squares */
+  height: 512px; /* 16px = 32 squares. Total 1024 squares */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  border: 1px solid black;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.16), 0 3px 10px rgba(0, 0, 0, 0.23);
+}
+
+.square {
+  height: 16px;
+  width: 16px;
+  margin: 0;
+  background: rgba(255,255,255,.7);
+}
+
+.border{
+  outline: 1px solid #383838;
+}
+
+.red {
+  background: red;
+}
+
+/* Footer */
+footer {
+  background: rgba(0,0,0,.5);
+  width: 100%;
+  position: fixed;
+  height: 30px;
+  bottom: 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+footer p {
+  color: white;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 30px;
+}
+
+footer img {
+  height: 18px;
+  width: 18px;
+  padding-left: 10px;
+  padding-top: 5px;
+}
+
+/* Overriding jQuery UI theme */
+
+.ui-dialog {
+  font: 14px/18px sans-serif;
+  font-size: 13px;
+  font-weight: 300;
+}
+
+.ui-dialog-titlebar-close {
+  display: none;
+}
+
+.ui-dialog .ui-dialog-title {
+  text-align: center;
+  width: 100%;
+}
+
+#customize-dialog p {
+  line-height: 30px;
+}
+
+#customize-dialog input {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 20%;
+
+}

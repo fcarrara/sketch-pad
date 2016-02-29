@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	
+	<head>
+		<base href="https://raw.githubusercontent.com/fcarrara/sketch-pad/master/index.html" target="_blank">
+		<title>Sketch Pad</title>
+		<link rel="stylesheet" href="assets/stylesheets/reset.css">
+		<link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+		<link rel="stylesheet" href="assets/stylesheets/main.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+   	<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Pacifico'>
+	</head>
+
+	<body>
+		
+		<!-- Header with buttons and logo -->
+
+		<header>
+
+			<h1 class="logo">Sketch Pad</h1>
+
+			<form>
+				<input type="radio" name="option" value="1" id="rainbow" checked><label for="rainbow">Rainbow</label>
+				<input type="radio" name="option" value="2" id="color"><label for="color">Color</label>
+				<input type="text" class="jscolor">
+				<input type="checkbox" id="progressive"><label for="progressive">Progressive (P key)</label>
+				<input type="checkbox" id="continuous" checked><label for="continuous">Continuous line (C key)</label>
+			</form>
+
+			<div class="button-container">
+				<i class="material-icons reset-btn" title="Reset grid">autorenew</i>
+				<i class="material-icons customize-btn" title="Customize grid">settings</i>
+				<i class="material-icons show-hide-grid" title="Show/Hide grid">grid_on</i>
+			</div>
+
+		</header>
+
+		<!-- Grid -->
+
+		<div class="container">
+		</div>
+	
+		<!-- Customization dialog -->
+
+		<div id="customize-dialog" title="Customize grid">
+			<p class="validateInput"></p>
+			<p>Please enter the number of squares per side:</p>	
+			<input type="text" id="grid-size">
+			<p>Total: <span id="total-squares"></span></p>
+		</div>
+
+		<!-- Footer -->
+		
+		<footer>
+			
+				<p>Developed by Fabricio Carrara</p>
+				<a href="https://github.com/fcarrara/sketch-pad">
+					<img class="github-mark" src="assets/images/GitHub-Mark-Light-32px.png" alt="github mark">
+				</a>
+			
+		</footer>
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+		<script src="scripts/main.js"></script>
+		<script src="scripts/min/jscolor.min.js"></script>	
+	</body>
+</html>
